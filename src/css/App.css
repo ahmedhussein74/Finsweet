@@ -1,0 +1,35 @@
+* {
+  color: #14142b;
+}
+
+.active {
+  font-weight: bold;
+  color: #503AE7;
+}
+
+@media screen and (max-width: 1023px) {
+  .active {
+    background-color: #eee;
+  }
+}
+
+.marquee {
+  user-select: none;
+}
+
+.marquee__group {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
+  }
+}
+
+li{
+  color: #fff;
+}
